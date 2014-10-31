@@ -1,87 +1,57 @@
 Source: haskell-cabal-ghcjs
 Maintainer: Debian Haskell Group <pkg-haskell-maintainers@lists.alioth.debian.org>
-Priority: optional
+Priority: extra
 Section: haskell
-Build-Depends: debhelper (>= 7.0)
-               , haskell-devscripts (>= 0.8)
-               , cdbs
-               , ghc
-               , ghc-prof
-Build-Depends-Indep: ghc-doc
+Build-Depends: debhelper (>= 7.0),
+ haskell-devscripts (>= 0.8),
+ cdbs,
+ ghc,
+ ghc-prof,
+Build-Depends-Indep: ghc-doc,
+X-Description: A framework for packaging Haskell software
+ The Haskell Common Architecture for Building Applications and
+ Libraries: a framework defining a common interface for authors to more
+ easily build their Haskell applications in a portable way.
+ .
+ The Haskell Cabal is part of a larger infrastructure for distributing,
+ organizing, and cataloging Haskell libraries and tools.
 
 Package: libghc-cabal-ghcjs-dev
 Architecture: any
-Depends: ${shlibs:Depends}
-         , ${haskell:Depends}
-         , ${misc:Depends}
-Recommends: ${haskell:Recommends}
-Suggests: ${haskell:Suggests}
-Conflicts: ${haskell:Conflicts}
-Provides: ${haskell:Provides}
-Replaces: ${haskell:Replaces}
-Description: A framework for packaging Haskell software
- The Haskell Common Architecture for Building Applications and
- Libraries: a framework defining a common interface for authors to more
- easily build their Haskell applications in a portable way.
- .
- The Haskell Cabal is part of a larger infrastructure for distributing,
- organizing, and cataloging Haskell libraries and tools.
- .
-  Author: Isaac Jones <ijones@syntaxpolice.org>
- Duncan Coutts <duncan@community.haskell.org>
-  Upstream-Maintainer: cabal-devel@haskell.org
- .
- This package provides a library for the Haskell programming language.
- See http:///www.haskell.org/ for more information on Haskell.
+Depends: ${haskell:Depends},
+ ${misc:Depends},
+ ${shlibs:Depends},
+Recommends: ${haskell:Recommends},
+Suggests: ${haskell:Suggests},
+Conflicts: ${haskell:Conflicts},
+Provides: ${haskell:Provides},
+Description: ${haskell:ShortDescription}${haskell:ShortBlurb}
+  ${haskell:LongDescription}
+  .
+  ${haskell:Blurb}
 
 Package: libghc-cabal-ghcjs-prof
 Architecture: any
-Depends: ${shlibs:Depends}
-         , ${haskell:Depends}
-         , ${misc:Depends}
-Recommends: ${haskell:Recommends}
-Suggests: ${haskell:Suggests}
-Conflicts: ${haskell:Conflicts}
-Provides: ${haskell:Provides}
-Replaces: ${haskell:Replaces}
-Description: A framework for packaging Haskell software
- The Haskell Common Architecture for Building Applications and
- Libraries: a framework defining a common interface for authors to more
- easily build their Haskell applications in a portable way.
- .
- The Haskell Cabal is part of a larger infrastructure for distributing,
- organizing, and cataloging Haskell libraries and tools.
- .
-  Author: Isaac Jones <ijones@syntaxpolice.org>
- Duncan Coutts <duncan@community.haskell.org>
-  Upstream-Maintainer: cabal-devel@haskell.org
- .
- This package provides a library for the Haskell programming language, compiled
- for profiling.  See http:///www.haskell.org/ for more information on Haskell.
+Depends: ${haskell:Depends},
+ ${misc:Depends},
+Recommends: ${haskell:Recommends},
+Suggests: ${haskell:Suggests},
+Conflicts: ${haskell:Conflicts},
+Provides: ${haskell:Provides},
+Description: ${haskell:ShortDescription}${haskell:ShortBlurb}
+  ${haskell:LongDescription}
+  .
+  ${haskell:Blurb}
 
 Package: libghc-cabal-ghcjs-doc
 Architecture: all
 Section: doc
-Depends: ${shlibs:Depends}
-         , ${haskell:Depends}
-         , ${misc:Depends}
-Recommends: ${haskell:Recommends}
-Suggests: ${haskell:Suggests}
-Conflicts: ${haskell:Conflicts}
-Provides: ${haskell:Provides}
-Replaces: ${haskell:Replaces}
-Description: A framework for packaging Haskell software
- The Haskell Common Architecture for Building Applications and
- Libraries: a framework defining a common interface for authors to more
- easily build their Haskell applications in a portable way.
- .
- The Haskell Cabal is part of a larger infrastructure for distributing,
- organizing, and cataloging Haskell libraries and tools.
- .
-  Author: Isaac Jones <ijones@syntaxpolice.org>
- Duncan Coutts <duncan@community.haskell.org>
-  Upstream-Maintainer: cabal-devel@haskell.org
- .
- This package provides the documentation for a library for the Haskell
- programming language.
- See http:///www.haskell.org/ for more information on Haskell.
+Depends: ${haskell:Depends},
+ ${misc:Depends},
+Recommends: ${haskell:Recommends},
+Suggests: ${haskell:Suggests},
+Conflicts: ${haskell:Conflicts},
+Description: ${haskell:ShortDescription}${haskell:ShortBlurb}
+  ${haskell:LongDescription}
+  .
+  ${haskell:Blurb}
